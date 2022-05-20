@@ -11,6 +11,8 @@ namespace Tailwind.Traders.Web.Controllers
     public class SettingsController : ControllerBase
     {
         private readonly Settings _settings;
+        private const string connectionString = "Server=ProductionSQL;Database=TailWindDB;User Id=admin;Password=Super$ecretPW!23;" 
+
         public SettingsController(IOptionsSnapshot<Settings> settings, IConfiguration config)
         {
             _settings = settings.Value;
